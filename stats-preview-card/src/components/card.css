@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.card__container{
+    width: 70%;
+    border-radius: .5rem;
+    text-align: center;
+    background: var(--card-bg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.card__left__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    margin: 4rem 1rem 4rem 4rem;
+}
+
+
+.card__right__content{
+    width: 50%;
+    background: url(./assets/image-header-desktop.jpg);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),url(./assets/image-header-desktop.jpg));
+    object-fit:cover;
+    overflow: hidden;
+    border-radius: 0rem .5rem .5rem 0rem;
+}
+
+.card__header{
+    text-align: left;
+    font-size: 16px;
+}
+
+.card__header h1{
+    margin-bottom: 1.5rem;
+}
+
+.card__header p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 5rem;
+}
+
+
+.card__info{
+    font-size: 16px;
+    display: flex;
+    gap: 4rem;
+    text-align: left;
+}
+
+.card__info p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.highlight{
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 600px){
+    .card__container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 60%;
+        margin: 10rem 0rem;
+        align-items: center;
+    }
+
+
+    .card__left__content{
+        width: 70%;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .card__header{
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    .card__info{
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+
+    .card__right__content{
+        width: 100%;
+        height: 25rem;
+        border-radius: .5rem .5rem 0rem 0rem;
+}
+}
